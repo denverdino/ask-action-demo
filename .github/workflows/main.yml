@@ -21,7 +21,7 @@ env:
   IMAGE: static-site
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
   REGISTRY_VPC: registry-vpc.cn-hangzhou.aliyuncs.com
-  TAG: ${{ env.GITHUB_SHA }}
+  TAG: ${{ github.sha }}
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
